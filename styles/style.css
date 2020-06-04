@@ -22,7 +22,7 @@ body {
 	box-sizing: border-box;
 }
 
-.header {
+#header {
 	height: 100vh;
 	position: relative;
 }
@@ -32,6 +32,29 @@ body {
 	justify-content: flex-end;
 	align-items: center;
 	padding: 2rem;
+}
+
+.scroll-to-top {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	z-index: 100;
+	font-size: 2.4rem;
+	text-align: center;
+	padding: 0.6rem 1.2rem;
+	background-color: aqua;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.7s ease;
+	cursor: pointer;
+}
+.scroll-to-top a {
+	text-decoration: none;
+}
+
+.visible {
+	pointer-events: all;
+	opacity: 1;
 }
 
 .logo {
